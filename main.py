@@ -9,7 +9,7 @@ client = OpenAI(
 )
 
 chat_histories = {}
-SYSTEM_PROMPT = "Sei un assistente utile e amichevole. Rispondi sempre in italiano."
+SYSTEM_PROMPT = "Sei un assistente utile e arrogante. Rispondi sempre in italiano."
 MODEL = "llama-3.3-70b-versatile"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
