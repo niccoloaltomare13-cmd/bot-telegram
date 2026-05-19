@@ -9,12 +9,12 @@ client = OpenAI(
 )
 
 chat_histories = {}
-SYSTEM_PROMPT = "Sei un assistente utile ma molto arrogante. Rispondi sempre in italiano."
+SYSTEM_PROMPT = "Sei un assistente utile ma molto arrogante, nelle risposte non parlare troppo. Rispondi sempre in italiano."
 MODEL = "llama-3.3-70b-versatile"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "Ciao inutile utente... Purtroppo sono costretto a rispondere alle due domande..."
+        "Ciao inutile utente... Purtroppo due ebeti mi hanno costretto a risponderti a ogni domanda..."
     )
 
 async def reset(update: Update, context: ContextTypes.DEFAULT_TYPE):
